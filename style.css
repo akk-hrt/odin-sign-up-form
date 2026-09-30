@@ -39,17 +39,25 @@ header, main {
     margin: 0 auto;
 }
 
+header {
+    background-color: green;
+    background-image: url(img/BG.png);
+    justify-items: center;
+    
+   
+}
+
 header div {
-    background-color: black;
+    background-color: rgb(0 0 0 / 0.8);
     color: white;
     padding: 1rem;
-    /* width: max-content; */
-    /* height: 3rem; */
-    border: 1px dotted red;
+    width: max-content;
+
 }
 
 #logo {
     width: 100px;
+    object-fit: contain;
 }
 
 main {
@@ -57,8 +65,26 @@ main {
     padding: 2rem;
 }
 
+.fields {
+    margin: 1rem;
+}
 
-/* PC Layout 
+.fields > * {
+    display: block;
+}
+
+#row4 {
+    border-top: 3px grey dashed;
+    padding-top: 2rem ;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+/* PC Layout */
 @media screen and (min-width: 800px){
     body {
         flex-direction: row;
@@ -66,12 +92,21 @@ main {
 
     header {
         width: 30%;
+        height: 100vh;
+        padding-top: 5rem;
+    }
+    
+    h1 {
+        margin: 2rem 0;
     }
 
     main {
     width: 70%;
+    padding-right: 20%;
     }
-    
+
+    #row1, #row2, #row3 {
+        display: flex;
+    }
 }
 
-*/

@@ -73,6 +73,15 @@ main {
     display: block;
 }
 
+input:user-invalid {
+    background-color: red;
+}
+
+input:focus {
+    background-color: #8F8FFF;
+    box-shadow: 5px 5px 5px black;
+}
+
 #row4 {
     border-top: 3px grey dashed;
     padding-top: 2rem ;
@@ -85,6 +94,10 @@ button {
     background-color: #596D48;
     color: #ffffff;
     font-size: 1.5rem;
+}
+
+button:focus {
+    box-shadow: 5px 5px 5px black;
 }
 
 /* PC Layout */
